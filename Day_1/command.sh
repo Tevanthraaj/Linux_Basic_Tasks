@@ -1,0 +1,22 @@
+echo "\n"
+echo "$TERM"
+echo "\n"  
+echo "$LANG"
+echo "\n"  
+echo "$DISPLAY"
+echo "\n"  
+echo "$PAGER"
+echo "\n"  
+echo "$SHLVL"
+echo "\n"  
+echo "$SHELL"
+echo "\n"  
+echo "$HOME"
+echo "\n"  
+printenv
+echo "\n"  
+which nano
+echo "\n"  
+ps
+echo "\n"
+echo "$PS1" 
