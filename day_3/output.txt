@@ -1,0 +1,87 @@
+#Permission Before and After
+#Before chmod
+total 2.1M
+-rw-rw-r-- 1 kali kali 6.0K Mar 16  2026 ap-south-1-tevanthraajofficial-regular(1).ovpn
+-rw-rw-r-- 1 kali kali 6.0K Mar 16  2026 ap-south-1-tevanthraajofficial-regular(2).ovpn
+-rw-rw-r-- 1 kali kali 6.0K Mar 16  2026 ap-south-1-tevanthraajofficial-regular.ovpn
+-rw-rw-r-- 1 kali kali 2.4K Mar 18  2026 config.inc.php(1).dist
+-rw-rw-r-- 1 kali kali 2.4K Mar 18  2026 config.inc.php(2).dist
+-rw-rw-r-- 1 kali kali 2.4K Mar 18  2026 config.inc.php.dist
+-rw-rw-r-- 1 kali kali 1.1K Mar 18  2026 create_mssql_db(1).sql
+-rw-rw-r-- 1 kali kali 1.1K Mar 18  2026 create_mssql_db.sql
+-rw-rw-r-- 1 kali kali 1.4M Sep 21 15:04 demo.png
+-rw-rw-r-- 1 kali kali 461K Mar 18  2026 Innerpeace.jpg
+-rw-rw-r-- 1 kali kali 129K Mar 18  2026 Kungfupanda.jpg
+-rw-rw-r-- 1 kali kali 3.3K Mar 23  2026 machines_us-7.ovpn
+-rw-rw-r-- 1 kali kali 3.3K Mar 27 09:50 starting_points_us-starting-point-2-dhcp.ovpn
+
+#After chmod
+mode of 'demo.png' changed from 0664 (rw-rw-r--) to 0777 (rwxrwxrwx)
+
+
+total 2.1M
+-rw-rw-r-- 1 kali kali 6.0K Mar 16  2026 ap-south-1-tevanthraajofficial-regular(1).ovpn
+-rw-rw-r-- 1 kali kali 6.0K Mar 16  2026 ap-south-1-tevanthraajofficial-regular(2).ovpn
+-rw-rw-r-- 1 kali kali 6.0K Mar 16  2026 ap-south-1-tevanthraajofficial-regular.ovpn
+-rw-rw-r-- 1 kali kali 2.4K Mar 18  2026 config.inc.php(1).dist
+-rw-rw-r-- 1 kali kali 2.4K Mar 18  2026 config.inc.php(2).dist
+-rw-rw-r-- 1 kali kali 2.4K Mar 18  2026 config.inc.php.dist
+-rw-rw-r-- 1 kali kali 1.1K Mar 18  2026 create_mssql_db(1).sql
+-rw-rw-r-- 1 kali kali 1.1K Mar 18  2026 create_mssql_db.sql
+-rwxrwxrwx 1 kali kali 1.4M Sep 21 15:04 demo.png
+-rw-rw-r-- 1 kali kali 461K Mar 18  2026 Innerpeace.jpg
+-rw-rw-r-- 1 kali kali 129K Mar 18  2026 Kungfupanda.jpg
+-rw-rw-r-- 1 kali kali 3.3K Mar 23  2026 machines_us-7.ovpn
+-rw-rw-r-- 1 kali kali 3.3K Mar 27 09:50 starting_points_us-starting-point-2-dhcp.ovpn
+mode of 'tevnthraaj.txt' changed from 0401 (r-------x) to 0541 (r-xr----x)
+-r-xr----x 1 kali kali 0 Mar 14  2026 tevnthraaj.txt
+
+#chown
+chown => to change the owner of a file or directory
+failed to change ownership of 'test.txt' from tester to tester
+ownership of 'test.txt' retained as tester
+changed ownership of 'test.txt' from kali to tester
+
+#Shared file
+
+total 12K
+drwx------ 28 kali   kali   4.0K Oct  9 09:52 kali
+drwxr-xr-x  2 root   demo   4.0K Sep 19 15:57 shared
+drwx------  5 tester tester 4.0K Sep 24 10:58 tester
+/home/shared
+└── cross_user.txt
+
+1 directory, 1 file
+
+
+total 0
+-rw-rwxr-- 1 root demo 0 Oct  9 09:55 cross_user.txt
+
+
+demo:x:1002:tester,tevanth,kali
+
+
+Hi from kali
+
+
+Hi from kali
+Hi from tester
+ 
+
+
+#Breaking and fixing scripts
+
+-rw-rw-r-- 1 tester demo 0 Oct  3 15:45 test.txt
+
+#Executed by shell "sh test.sh" 
+Hi from the script
+echo "Hi from the script"
+
+#Direct execution
+zsh: permission denied: ./test.sh
+-rw-rw-r-- 1 kali kali 26 Oct  9 10:27 test.sh
+
+mode of 'test.sh' changed from 0664 (rw-rw-r--) to 0775 (rwxrwxr-x)
+
+-rwxrwxr-x 1 kali kali 26 Oct  9 10:27 test.sh
+Hi from the script
