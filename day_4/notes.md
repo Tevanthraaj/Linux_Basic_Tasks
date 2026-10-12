@@ -7,9 +7,9 @@ uniq => to identfy or remove the duplicates
 tr => to translate or delete (-d) the char in the given input
 wc => to count words , lines , charcters
 | => to pipe the output of one cmd to other cmd's input
-> => to redirect and rewrite the output given to a file 
+'>' => to redirect and rewrite the output given to a file 
 < => to take input from the file 
->> => to append the output to a file 
+'>>' => to append the output to a file 
 regex (regular expression) used with grep and etc ...
 | Symbol | Meaning | Example |
 |---|---|---|
