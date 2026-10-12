@@ -1,17 +1,16 @@
 ## Text Processing Commands
-
-* `grep` → Print matching lines.
-* `cut` → Extract fields.
-* `awk` → Process text using patterns and actions.
-* `sed` → Transform text.
-* `sort` → Sort lines.
-* `uniq` → Identify or remove adjacent duplicates.
-* `tr` → Translate or delete characters.
-* `wc` → Count lines, words, and characters.
-* `|` → Pipe output into another command.
-* `>` → Redirect output and overwrite a file.
-* `<` → Read input from a file.
-* `>>` → Append output to a file.
+* `grep` => to print matching lines 
+* `cut` => to seprate into fields 
+* `awk` => process text by pattern ,char 
+* `sed` => transfrom words  in a file 
+* `sort` => to sort the  file content based on the length and size 
+* `uniq` => to identfy or remove the duplicates
+* `tr` => to translate or delete (-d) the char in the given input
+* `wc` => to count words , lines , charcters
+* `|` => to pipe the output of one cmd to other cmd's input
+* `>` => to redirect and rewrite the output given to a file 
+* `<` => to take input from the file 
+* `>>` => to append the output to a file 
 
 ## Regular Expressions (Regex)
 
