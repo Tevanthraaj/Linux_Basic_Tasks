@@ -1,0 +1,152 @@
+##Usage of grep
+
+
+bin
+Desktop
+Documents
+Downloads
+fileout
+fileout.txt
+flag.txt
+jwt-test-env
+Linux_Basic_Tasks
+Music
+output.txt
+Pictures
+Public
+sample.log
+sample.pdf
+sf.py
+sherlock
+spiderfoot
+Templates
+test.sh
+test.txt
+tevnthraaj.txt
+venv
+Videos
+
+
+#finding error in sample.log file
+2:ERROR authentication failed for tester
+5:ERROR connection timeout
+
+##Using cut to print seperate fields
+
+bin
+Desktop
+Documents
+Downloads
+fileout
+fileout.txt
+flag.txt
+jwt-test-env
+Linux_Basic_Tasks
+Music
+output.txt
+Pictures
+Public
+sample.log
+sample.pdf
+sf.py
+sherlock
+spiderfoot
+Templates
+test.sh
+test.txt
+tevnthraaj.txt
+users.csv
+venv
+Videos
+
+#printing first field  in users.csv file using cut
+
+kali,admin,192.168.1.10
+tester,user,192.168.1.20
+tevanth,admin,192.168.1.30
+
+kali
+tester
+tevanth
+
+##printing first field  in users.csv file using awk
+
+
+kali,admin,192.168.1.10
+tester,user,192.168.1.20
+tevanth,admin,192.168.1.30
+1 kali
+2 tester
+3 tevanth
+
+
+##using sed to translate word from a file to other file
+
+#input.txt file 
+
+error success hello
+success error world
+error success hello 
+
+
+#output.txt file after sed command(change hello to world)
+
+error success world
+success error world
+error success world 
+
+
+##using sort to sort the text files 
+
+input.txt file
+
+
+error success hello
+success error world
+error success hello
+
+#sorted
+error success hello
+error success hello
+success error world
+#sorted and only uniq with the count of dup lines
+      2 error success hello
+      1 success error world
+#sorted and only uniq
+error success hello
+success error world
+
+##Using tr to tanslate chars
+
+#file content 
+error success hello
+success error world
+error success hello
+
+#file content printed  after a-z to A-Z change 
+ERROR SUCCESS HELLO
+SUCCESS ERROR WORLD
+ERROR SUCCESS HELLO
+
+#file content printed after deleting e
+
+rror succss hllo
+succss rror world
+rror succss hllo
+
+##using wc (word count)
+
+#file content
+error success hello
+success error world
+error success hello
+#lines
+3 input.txt
+#words
+9 input.txt
+#chars
+60 input.txt
+#lines words characters
+ 3  9 60 input.txt
+
+
