@@ -10,7 +10,7 @@
 - `>` → Redirect output and overwrite a file.
 - `<` → Read input from a file.
 - `>>` → Append output to a file.
-- regex (regular expression) used with grep and etc ...
+regex (regular expression) used with grep and etc ...
 | Symbol | Meaning | Example |
 |---|---|---|
 | [0-9] | Any digit | user7 |
